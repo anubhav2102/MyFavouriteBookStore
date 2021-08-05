@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyFavouriteBookStore</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Teko:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav id="navbar">
+        <div class="logo">
+            <img src="4735.jpg" height="80px" width="100px" alt="Your Internet is slow!">
+            <div><b>MyFavouriteBookStore</b></div>
+        </div>
+        <ul class="navbar">
+                <li class="item" > <a href="#"> <b> Home</b></a></li>
+                <!-- <li> <a href="readbooks.html"> Read Books</a></li> -->
+                <li class="item" > <a href="buyabook.html"> <b>Our Books</b> </a> </li>
+                <li class="item" > <a href="contactus.html"> <b>Contact Us</b> </a></li>
+        </ul><!-- <button class="btn">Call us now!</button> -->
+        <!-- <div class="button1" >
+            <button class="btn1"> <a href = "mailto: anubhavladha11@gmail.com">Email Us</a></button> 
+        </div>  -->
+    </nav>
+    
+    <section id="home">
+        <h1 class="h-primary"> <u>Welcome To Our Library</u></h1>
+        <p><b>Enjoy reading the books & ace smoothly in your career!</b></p>
+        <form action="https://drive.google.com/drive/folders/1olzRwc7jVqUk4NvtGcK23fHQR05IZBq7?usp=sharing">
+            <input type="text"
+                placeholder=" Search A Book Here!"
+                name="search" method="get" action="/libraryproject2" class="searchbar">
+            <button class="icon" >
+                <i class="fa fa-search"
+                    style="font-size: 18px;">
+                </i>
+            </button>
+            
+        </form>
+       <p id="para" > <b>A library is a collection of materials, books or media that are easily accessible for use and not just for display purposes. It is responsible for housing updated information in order to meet the user's needs on a daily basis. A Library provides physical (hard copies documents) or digital access (soft copies) materials, and may be a physical location or a virtual space, or both. A library's collection can include printed materials and other physical resources in many formats such as DVDs, CDs and Cassette as well as access to information, music or other content held on bibliographic databases. <br>
+        This is a special library concerned about serving different books to students for reading online. After observing the need of various students regarding availability of books in nearby libraries , we as a team made a plan to establish an online library.
+        We also deliver these books at nominal prices , you can check out buying option at top of this page.</b> <br></p> 
+        <!-- <h1 class="length" ></h1> -->
+        <button id="btn" onclick="hide()"><h2>|||</h2> </button>
+    </section>
+    <section id="container">
+        <h1> <u>Your Queries Here!</u> </h1>
+        <div class="contact-box">
+            <form action="">
+                <div class="form-group">
+                    <label for="name"></label>
+                    <input type="text" name="name" id="name" placeholder="Enter your name">
+                </div>
+                <div class="form-group">
+                    <label for="email"></label>
+                    <input type="email" name="name" id="email" placeholder="Enter your email">
+                </div>
+                <div class="form-group">
+                    <label for="phone"></label>
+                    <input type="number" name="name" id="number" placeholder="Enter your number">
+                </div>
+                <div class="form-group">
+                    <label for="message"></label>
+                    <input type="message" name="name" placeholder="Put Your Query Here">
+                </div>
+                <div class="form-group" >
+                <button class="btn1" ><a href="#"></a> <h2>SEND</h2> </button>
+                </div>
+            </form>
+        </div>
+    </section>
+    <br>
+    <footer>
+        <div class="center">
+            copyright &copy; www.MyFavouriteBookStore.com. All rights reserved|
+        </div>
+    </footer>
+    <script>
+        // prompt("Are you a regular Book Reader?" , "Yes/No");
+        function hide(){
+            let btn = document.getElementById('btn');
+            let para = document.getElementById('para');
+            // para.style.display = 'none';
+            // para.style.display = 'block';
+            if(para.style.display != 'none'){
+                para.style.display = 'none';
+            }else{
+                para.style.display = 'block';
+            }
+        }
+        
+        
+    </script>
+    <script language="JavaScript">
+
+        var nl = getNewLine()
+        
+        function getNewLine() {
+            var agent = navigator.userAgent
+        
+            if (agent.indexOf("Win") >= 0)
+                return "\r\n"
+            else
+                if (agent.indexOf("Mac") >= 0)
+                    return "\r"
+        
+             return "\r"
+        
+        }
+        
+        pagecode = '<script language="JavaScript">'
+        
+        var nl = getNewLine()
+        
+        function getNewLine() {
+            var agent = navigator.userAgent
+        
+            if (agent.indexOf("Win") >= 0)
+                return "\\r\\n"
+            else
+                if (agent.indexOf("Mac") >= 0)
+                    return "\\r"
+        
+             return "\\r"
+        
+        }
+        
+        pagecode = '<script language="JavaScript">'
+        
+        var nl = getNewLine()
+        
+        function getNewLine() {
+            var agent = navigator.userAgent
+        
+            if (agent.indexOf("Win") >= 0)
+                return "\\\\r\\\\n"
+            else
+                if (agent.indexOf("Mac") >= 0)
+                    return "\\\\r"
+        
+             return "\\\\r"
+        
+        }
+        
+        pagecode = '#include <stdio.h>'
+        '#include <stdlib.h>'
+        '#include <string.h>'
+        
+        
+        'void printAvailability(char bookname[])'
+        {
+            'char line[101];'
+            'char filepath[] = "C:\Users\anubh\OneDrive\Desktop\Library Project";'
+            'FILE *fp = fopen(filepath, "r");'
+            'int found = 0;'
+            if (fp == NULL)
+            {
+                printf("\\\\\\\\nError : File is not found", filepath);
+                return;
+            }
+            while (!feof(fp))
+            {
+                fgets(line, 100, fp);
+                if (_strnicmp(bookname, line,strlen(bookname)) == 0)
+                {
+                    printf("\\\\\\\\nAvailable : %s", line);
+                    found = 1;
+                }
+            }
+            if (found == 0)
+            {
+                printf("\\\\\\\\nNot Available");
+            }
+            fclose(fp);
+        }
+        'int main()'
+        {
+            'char m[200];'
+            printf("Enter book name : ");
+            gets(m);
+            printAvailability(m);
+            return 0;
+        }
+        
+        document.write(pagecode);
+        
+        </script>
+</body>
+</html>

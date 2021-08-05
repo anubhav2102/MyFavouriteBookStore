@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Books</title>
+    <style>
+        #myInput {
+  background-image: url('/css/searchicon.png'); /* Add a search icon to input */
+  background-position: 10px 12px; /* Position the search icon */
+  background-repeat: no-repeat; /* Do not repeat the icon image */
+  width: 100%; /* Full-width */
+  font-size: 30px; /* Increase font-size */
+  padding: 12px 20px 12px 40px; /* Add some padding */
+  border: 1px solid #ddd; /* Add a grey border */
+  margin-bottom: 12px; /* Add some space below the input */
+  border: 4px solid black;
+  background-color: blanchedalmond;
+}
+
+#myUL {
+  /* Remove default list styling */
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+/* #myUL::before{
+  content: "";
+    background: url('libraray3.jpg') no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%; */
+    /* top: 0px;
+    left: 0px; */
+    /* z-index: -1;
+    opacity: 0.7;
+} */
+
+#myUL li a {
+  border: 3px solid black; /* Add a border to all links */
+  margin-top: -1px; /* Prevent double borders */
+  background-color: #eea2a2; /* Grey background color */
+  padding: 12px; /* Add some padding */
+  text-decoration: none; /* Remove default text underline */
+  font-size: 23px; /* Increase the font-size */
+  font-weight: bold;
+  color: black; /* Add a black text color */
+  display: block; /* Make it into a block element to fill the whole list */
+}
+
+#myUL li a:hover:not(.header) {
+  background-color: blanchedalmond; /* Add a hover effect to all links, except for headers */
+}
+    </style>
+</head>
+<body>
+    <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for a book..">
+
+<ul id="myUL">
+  <li><a href="https://drive.google.com/file/d/19R7GlLd7oqjhNTmyHz-QpSzQoMoJcfZc/view?usp=sharing">Class 11th Physics Part-1</a></li>
+  <li><a href="https://drive.google.com/file/d/19ZniFxSJxGSwz2DwOzKRbKR5itH5iMZK/view?usp=sharing">Class 11th Physics Part-2</a></li>
+  <li><a href="https://drive.google.com/file/d/18_9Ft885bwz7tw-b5XzQyaKZNmO4DNhK/view?usp=sharing">Class 11th Chemistry Part-1</a></li>
+  <li><a href="https://drive.google.com/file/d/18ajNIL_GspjBha5isvQnC3uQHai9twvx/view?usp=sharing">Class 11th Chemistry Part-2</a></li>
+  <li><a href="https://drive.google.com/file/d/19P8U80cMSAVE5z6zClOwop9JTUEUCKse/view?usp=sharing">Class 11th Biology</a></li>
+  <li><a href="https://drive.google.com/file/d/19ESyygWHEd7iZaFtw7jf4MzCUZwxHDDy/view?usp=sharing">Class 11th Mathemetics</a></li>
+  <li><a href="https://drive.google.com/file/d/19CfUYTp8F7q7AGl6vF9E32NrB3cS0sHD/view?usp=sharing">Class 11th English Woven Words</a></li>
+  <li><a href="https://drive.google.com/file/d/197ly-e_fXng5WRwTfKWre_K0lbM4YTKu/view?usp=sharing">Class 11th English Snapshots</a></li>
+  <li><a href="https://drive.google.com/file/d/194GoNrOazy63EXN4a3bWH6do2iY4EcXS/view?usp=sharing">Class 11th English Hornbill</a></li>
+  <li><a href="https://drive.google.com/file/d/1A6GV6nEEAiQwPBBiHq7zg5CxBNXrRfoM/view?usp=sharing">Class 12th Chemistry Part 1</a></li>
+  <li><a href="https://drive.google.com/file/d/19oHE4dK7CRDGRJK0sNQhr_ZMJ6rmwQO2/view?usp=sharing">Class 12th Chemistry Part 2</a></li>
+  <li><a href="https://drive.google.com/file/d/19yriZSW5cLxr8JmAgpb3iJ0YUOe2aENA/view?usp=sharing">Class 12th Physics Part 1</a></li>
+  <li><a href="https://drive.google.com/file/d/19zH9UBpViq-gCipIrKAP69SoAM9XDdCA/view?usp=sharing">Class 12th Physics Part 2</a></li>
+  <li><a href="https://drive.google.com/file/d/19tljOOFCuBw5icWOlyjC3LHpP2RvtGOF/view?usp=sharing">Class 12th Mathemetics Part 1</a></li>
+  <li><a href="https://drive.google.com/file/d/1AB7tmHLCfSqI5wiq7kg0j_eaUeenzhln/view?usp=sharing">Class 12th Mathemetics Part 2</a></li>
+  <li><a href="https://drive.google.com/file/d/19zOHKW95mgOkwQGVBybSwPThmSbFCxFk/view?usp=sharing">Class 12th Biology</a></li>
+  <li><a href="https://drive.google.com/file/d/1ATU2VCucaDiJ8Q5_ODc3_tcSNPKza-KF/view?usp=sharing">Class 12th English Flamingo</a></li>
+  <li><a href="https://drive.google.com/file/d/1AQ9pk2fLg0gLRP0hASUcYaSAqOZ5eVf2/view?usp=sharing">Class 12th English Vista</a></li>
+  <li><a href="https://drive.google.com/file/d/1AQ9pk2fLg0gLRP0hASUcYaSAqOZ5eVf2/view?usp=sharing">Class 12th English Kalidoscope</a></li>
+  <li><a href="https://drive.google.com/file/d/1mnEJBbQ_YZrq_OQA5j_HbXVXFYa_peOk/view?usp=sharing">Cuolson and Richardson's Chemical Engineering</a></li>
+  <li><a href="https://drive.google.com/file/d/1CmwNw114LCgxBo6yfMNhSuFi8PNU8aZy/view?usp=sharing">Engineering Thermofluids</a></li>
+
+  <li><a href="https://drive.google.com/file/d/1rNrxctQiQruKfjkm3aSWIbT5Hn2wnc7M/view?usp=sharing">Fluid Mechanics,Heat Transfer And Mass Transfer Chemical Engineering Practices</a></li>
+  <li><a href="https://drive.google.com/file/d/1VM_r_HgoIs3EJld3ojcwOvfjVF_tm8NY/view?usp=sharing">Fundamentals Of Chemical Engineering Thermodynamics</a></li>
+
+  <li><a href="https://drive.google.com/file/d/14SvxbOvwrsvsBu73QeZgiXORtfGtUNr0/view?usp=sharing">An Engineer's Guide to MATLAB</a></li>
+  <li><a href="https://drive.google.com/file/d/1HPcnQTPZ4H-UtThIKgUgLVmtKj-cngNV/view?usp=sharing">Fluid Mechanics For Civil Engineers</a></li>
+  <li><a href="https://drive.google.com/file/d/1Yw39rzvFgKhro8u652j5QCcLwWeSbBjw/view?usp=sharing">Introduction To Differential Calculus</a></li>
+  <li><a href="https://drive.google.com/file/d/1RpASsYycKHjv--If6_VlWmQHb_a3i1dL/view?usp=sharing">Introduction To Integral Calculus</a></li>
+  <li><a href="https://drive.google.com/file/d/1FP-sfqPU5SBuaE4u3EhG_CpKzYDrs4NW/view?usp=sharing">Structural Engineering</a></li>
+  <li><a href="https://drive.google.com/file/d/1bpofVowwWgvcMai2zz8PS9X3d7gI-80X/view?usp=sharing">Advances In Computer Science And Information Technology</a></li>
+  <li><a href="https://drive.google.com/file/d/11o5_GL6F1v-y6tfLSnjhi2J4YDGWcO2p/view?usp=sharing">Bird Higher Engineering Mathemetics</a></li>
+  <li><a href="https://drive.google.com/file/d/1iAh8Xk54p2J6mE2rdRxTiJzWPqCVXyI3/view?usp=sharing">C Language</a></li>
+  <li><a href="https://drive.google.com/file/d/1y4uJyng-9bvGajOk08gs4_lMeTSAu4_5/view?usp=sharing">Data Structures Algorithm And Applications In C By Sartraj Sahani</a></li>
+  <li><a href="https://drive.google.com/file/d/1BrkYZOi5tEwwr41yCPLur85eMhsQz0Qe/view?usp=sharing">Emerging Artificial Intelligence Application In Computer Engineering</a></li>
+  <li><a href="https://drive.google.com/file/d/14F1QDH-pAvt_TYWBXE9UcMWSMwsRoBwp/view?usp=sharing">Hacking Beginner To Expert Guide To Computer Hacking And Penetration Testing</a></li>
+  <li><a href="https://drive.google.com/file/d/1VnkJfCHhBVMZEdwC_nG-FJ7cRicgMo3t/view?usp=sharing">Higher Mathemetics For Physics And Engineering Mathemetical Methods For Contemporary Physics</a></li>
+  <li><a href="https://drive.google.com/file/d/1ZnQMwPK1H-MXIZ91nYhP-Gzc9QN0cnrL/view?usp=sharing">Introduction To C++</a></li>
+  <li><a href="https://drive.google.com/file/d/1FER6QU4XupZNMi_1SJFs0DTj2v8LXV8I/view?usp=sharing">Javascript For Beginners</a></li>
+  <li><a href="https://drive.google.com/file/d/1PcG-HCbCadSu9Gx9gNuZEJDSlTRBMjEy/view?usp=sharing">Learn C Prgoramming</a></li>
+  <li><a href="https://drive.google.com/file/d/1C3LcnTkNMeWSQYNv_XIx-79NwEeqZZsO/view?usp=sharing">Learning PHP , MYSQL ,JS ,CSS ,HTML5 A Step-By-Step Guide To Create Dynamic Websites</a></li>
+  <li><a href="https://drive.google.com/file/d/1f08JA4kTnrqxWFYHieO3vRMWHtjUNZjC/view?usp=sharing">Numeric Modelling And Design Of Electrical Machines And Devices</a></li>
+  <li><a href="https://drive.google.com/file/d/1QyshbuqQLkw3fSBaCTo8Jz1XHIlBDwli/view?usp=sharing">Python Data Analytics</a></li>
+  <li><a href="https://drive.google.com/file/d/1giTDmZq5v8ObJ3q31CiB7gh_OqGIoLxU/view?usp=sharing">Python Programming</a></li>
+  <li><a href="https://drive.google.com/file/d/1caNTCq7GQKfBVFZS50Flp4zBeZRse1Zh/view?usp=sharing">Statistical And Machine Learning Data Mining</a></li>
+  <li><a href="https://drive.google.com/file/d/1vcR_xqcNag1q8SILTO7LGp10cpLyIHC6/view?usp=sharing">Theory Of Computer Sciences</a></li>
+  <li><a href="https://drive.google.com/file/d/1Zwdqmd51wvO8nTw5PlpwwSkNUFCyMwBE/view?usp=sharing">Trends In Computer Science, Engineering And Information Technology</a></li>
+  <li><a href="https://drive.google.com/file/d/1Zwdqmd51wvO8nTw5PlpwwSkNUFCyMwBE/view?usp=sharing">Web Design With HTML And CSS Digital Classroom</a></li>
+  <li><a href="https://drive.google.com/file/d/1i9U6kjovwONWYplJ34MTuJSOadZaYszi/view?usp=sharing">Advanced Electrical And Electronics Engineering</a></li>
+  <li><a href="https://drive.google.com/file/d/1VOhAcYti0JQT4yWFosPlamYzbTl2yBt6/view?usp=sharing">Electrical Circuit Theory And Technology</a></li>
+  <li><a href="https://drive.google.com/file/d/1PjHSQkUsxElAKQsHNH1v4KuqP0-UPRVi/view?usp=sharing">Electronics Fundamentals</a></li>
+  <li><a href="https://drive.google.com/file/d/1emIR83IGJnOk26qbYvuPA8RHg9C7GPKb/view?usp=sharing">Engineering Mathemetics</a></li>
+  <li><a href="https://drive.google.com/file/d/1yyVAlvVjdfRFLgG7Y05gF0AgvjjaU3Sq/view?usp=sharing">Higher Mathemetics For Physics And Engineering Mathemetical Methods For Contemporary Physics</a></li>
+  <li><a href="https://drive.google.com/file/d/1J-Fw136f3FnCSfF7vPwuL9a4wxZkYC5Q/view?usp=sharing">Introduction To Differential Calculus</a></li>
+  <li><a href="https://drive.google.com/file/d/1IUvY1A3owWXfcGxmLsGOzsNAc79_6lOI/view?usp=sharing">Introduction To Integral Calculus</a></li>
+  <li><a href="https://drive.google.com/file/d/1Y4S2ZG3rOCp3zXhiBeGB0IayGfx2vkvw/view?usp=sharing">Mathemetics For Electrical Engineering And Computing</a></li>
+  <!-- <li><a href="https://drive.google.com/file/d/1PCnuOVdqn3Lovci6hg-gWiIq_sMGoIMG/view?usp=sharing">Numeric Modelling </a></li> -->
+  <li><a href="https://drive.google.com/file/d/1TGkOI9IzLiffDWUjgR3Ms4cs44nEcux8/view?usp=sharing">An Engineer's Guide to MATLAB</a></li>
+  <li><a href="https://drive.google.com/file/d/19bOKhOqiSEBTuVAtG5D8erY8S8r6FJh1/view?usp=sharing">Higher Mathemetics For Physics And Engineering Mathemetical Methods For Contemporary Physics </a></li>
+  <li><a href="https://drive.google.com/file/d/1vjHGXoM6of-DKQFSP8wZj6pEMc4zK668/view?usp=sharing">Mechanical Engineering Drawing Workshops</a></li>
+  <li><a href="https://drive.google.com/file/d/1x_j5bVqBrLDLclQZAKCs3TGeDI1A5Hmg/view?usp=sharing">Fundamental Of Petroleum And Petrochemical Engineering</a></li>
+  <li><a href="https://drive.google.com/file/d/1Jog44KcKecIIK-Kp7wPulYff8_WFeaT2/view?usp=sharing">Introduction To Differential Calculus</a></li>
+  <li><a href="https://drive.google.com/file/d/1PCxm0C4MNy8vZlPaTdIG-BZBGu9vl84I/view?usp=sharing">Introduction To Petroleum Engineering</a></li>
+  <li><a href="https://drive.google.com/file/d/1tpnnCneiXY-IkmZIVMYulIbsHfMuqkr7/view?usp=sharing">Working Guide To Petroleum And Natural Gas Production Engineering</a></li>
+</ul>
+<script>
+    function myFunction() {
+      // Declare variables
+      var input, filter, ul, li, a, i, txtValue;
+      input = document.getElementById('myInput');
+      filter = input.value.toUpperCase();
+      ul = document.getElementById("myUL");
+      li = ul.getElementsByTagName('li');
+    
+      // Loop through all list items, and hide those who don't match the search query
+      for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        txtValue = a.textContent || a.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+          li[i].style.display = "";
+        } else {
+          li[i].style.display = "none";
+        }
+      }
+    }
+    </script>
+</body>
+</html>
