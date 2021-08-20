@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400&display=swap" rel="stylesheet">
+    <title>Our Books Here!</title>
+    <style>
+        .topnav input[type=text] {
+  /* float: right; */
+  padding: 6px;
+  /* border: none; */
+  margin-top: 8px;
+  margin-right: 16px;
+  font-size: 17px;
+}
+    </style>
+    <link rel="stylesheet" href="buyabook.css">
+    <script src="buyabook.js"></script>
+</head>
+<body>
+    <section id="first">
+        <h1>  You Can Read A Book Here:-</h1>
+    <div class="readone">
+        <label for="branch"><b>Choose Your Category:</b></label>
+
+    <select name="branch" id="branch">
+        <option value="#">--Select Your Category--</option>
+        <option value="class11">Class - 11th</option>
+        <option value="class12">Class - 12th</option>
+        <option value="chemical">Chemical</option>
+        <option value="cs">CS</option>
+        <option value="petroleum">Petroleum</option>
+        <option value="ece">ECE</option>
+        <option value="civil">Civil</option>
+        <option value="mechanical">Mechanical</option>
+    </select>
+    <br>
+    <button type="button" class="button1" onclick="sendBooks()" target="_blank"><b>Submit</b></button>
+    <br>
+    <br>
+    <ol id="bookList" target="_blank">
+    </ol>
+    </div>
+    </section>
+    <section id="second">
+        <h1> You Can Check All Books Here:-</h1>
+    <a href="try.html" class="secondbook"><b>All Books</b></a>
+    <br>
+    <br>
+    </section>
+    
+    <section id="third">
+        <h1> You Can Buy A Book Here:- </h1>
+        <br>
+        <br>
+        <a href="paymentpage.html" class="secondbook"><b>Next</b></a>
+    </section>
+  
+</body>
+</html>
