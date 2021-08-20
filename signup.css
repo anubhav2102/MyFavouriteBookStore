@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Rubik', sans-serif;
+}
+body{
+   
+    /* opacity: 0.8;
+    z-index: -1; */
+    background: url('signup(1).jpg') no-repeat center center fixed;
+    
+    background-size: cover;
+     
+}
+/* body::before{
+    
+    
+    
+} */
+.container{
+    /* border: 12px solid black; */
+    color: white;
+    position: absolute;
+    top: 15%;
+    left: 15%;
+}
+.container h1{
+    font-size: 50px;
+    /* border-bottom: 5px solid purple; */
+    margin-bottom: 43px;
+    padding: 13px 0;
+}
+.container h2{
+    font-size: 35px;
+    border-bottom: blueviolet;
+}
+.box{
+    width: 100%;
+    /* border: 2px solid  rgb(250, 189, 250); */
+    /* border-bottom: 3px solid purple; */
+    margin: 32px 0;
+    /* text-align: center; */
+}
+.box input{
+    width: 75%;
+    
+    padding: 5px 10px;
+    border: 3px solid black;
+    border-radius: 10px;
+    outline: none;
+    font-size: 20px;
+    /* background: none; */
+    text-align: center;
+    /* color: white; */
+}
+.box i{
+    padding: 0px 12px;
+    width: 50px;
+    /* float: left; */
+    text-align: center;
+}
+.btn{
+    cursor: pointer;
+    outline: none;
+    width: 25%;
+    margin: 12px 12px;
+    padding: 6px;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    /* border: 2px solid purple; */
+    border: 3px solid white;
+    color: white;
+    background-color: black;
+    text-decoration: none;
+}
+.btn a{
+    text-decoration: none;
+    color: white;
+}
+.btn:hover{
+    color: black;
+    background-color: white;
+    border: 4px solid black;
+    text-decoration: none;
+}
+.btn a:hover{
+    color: black;
+}
+#name:hover{
+    color: white;
+    background-color: black;
+    border: 3px solid wheat;
+}
+#password:hover{
+    color: white;
+    background-color: black;
+    border: 3px solid wheat;
+}
+#number:hover{
+    color: white;
+    background-color: black;
+    border: 3px solid wheat;
+}
+#email:hover{
+    color: white;
+    background-color: black;
+    border: 3px solid wheat;
+}
+/* #name{
+    color: blanchedalmond;
+} */
+#branch{
+    font-size: 24px;
+    border-radius: 8px;
+}
+#choose{
+    font-size: 24px;
+}
+#branch:hover{
+    color: blanchedalmond;
+    background-color: black;
+}
