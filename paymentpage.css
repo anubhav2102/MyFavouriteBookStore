@@ -1,0 +1,145 @@
+body{
+    background-color:silver;
+    text-align: center;
+    
+}
+ #first{
+     display: flex;
+flex-direction: column;
+/* padding: 3px 200px; */
+/* height: 1000px; */
+/* height: 300px; */
+align-items: center;
+justify-content: center;
+border: 5px solid wheat;
+margin: 12px;
+padding: 10px;
+/* font-family: 'Baloo Bhai 2', cursive; */
+ }
+ /* #first::before{
+content: "";
+background: url('last.jpg') no-repeat center center/cover;
+position: absolute;
+height: 100%;
+width: 100%;
+/* top: 0px;
+left: 0px; */
+/* z-index: -1; */
+/* opacity: 0.80; */
+/* top: 138px; */
+/* bottom: 0px; */
+/* } */ */
+#first::before{
+content: "";
+background: url('last.jpg') no-repeat center center/cover;
+position: absolute;
+height: 100%;
+width: 100%;
+z-index: -1;
+opacity: 0.8;
+}
+#first h1{
+font-size: 50px;
+/* font-family: 'Baloo Bhai 2', cursive; */
+}
+.button{
+font-size: 25px;
+background-color: blanchedalmond;
+color: black;
+border: 4px solid black;
+border-radius: 10px;
+cursor: pointer;
+}
+.button:hover{
+
+color: blanchedalmond;
+background-color: black;
+}
+.users{
+font-size: 35px;
+/* font-family: 'Baloo Bhai 2', cursive; */
+}
+#card_type{
+font-size: 25px;
+
+color: black;
+border: 3px solid blanchedalmond;
+border-radius: 7px;
+/* font-family: 'Baloo Bhai 2', cursive; */
+}
+#card_type:hover{
+background-color:black;
+color: wheat;
+}
+
+#card_number{
+font-size: 25px;
+
+color:black;
+border: 3px solid wheat;
+border-radius: 7px;
+/* font-family: 'Baloo Bhai 2', cursive; */
+}
+/* #card_number:hover{
+background-color: wheat;
+color: black;
+} */
+#exp_date{
+font-size: 25px;
+
+color:black;
+border: 3px solid wheat;
+border-radius: 7px;
+/* font-family: 'Baloo Bhai 2', cursive; */
+}
+#cvv{
+font-size: 25px;
+
+color: black;
+border: 3px solid wheat;
+border-radius: 7px;
+/* font-family: 'Baloo Bhai 2', cursive; */
+}
+
+#third{
+align-items: center;
+
+}
+#third h1{
+font-size: 50px;
+/* font-family: 'Baloo Bhai 2', cursive; */
+align-items: center;
+}
+.thirdbook{
+font-size: 35px;
+/* font-family: 'Baloo Bhai 2', cursive; */
+align-items: center;
+}
+.button2{
+font-size: 25px;
+color: black;
+background-color: wheat;
+border: 4px solid black;
+border-radius: 10px;
+cursor: pointer;
+/* text-decoration: none; */
+padding: 10px;
+margin: 25px;
+}
+.data{
+
+color: black;
+border: 3px solid blanchedalmond;
+border-radius: 5px;
+
+/* font-family: 'Baloo Bhai 2', cursive; */
+padding: 5px;
+
+}
+.data2{
+font-size: xx-large;
+}
+.button2:hover{
+color: blanchedalmond;
+/* background-color: black; */
+}
