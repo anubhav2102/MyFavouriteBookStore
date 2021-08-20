@@ -1,68 +1,25 @@
-'use strict';
+// Node server which will handle socket io connections
+const io = require('socket.io')(8000)
 
-var alphabet = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz-_'.split('')
-  , length = 64
-  , map = {}
-  , seed = 0
-  , i = 0
-  , prev;
+const users = {};
 
-/**
- * Return a string representing the specified number.
- *
- * @param {Number} num The number to convert.
- * @returns {String} The string representation of the number.
- * @api public
- */
-function encode(num) {
-  var encoded = '';
+io.on('connection', socket =>{
+    // If any new user joins, let other users connected to the server know!
+    socket.on('new-user-joined', name =>{ 
+        users[socket.id] = name;
+        socket.broadcast.emit('user-joined', name);
+    });
 
-  do {
-    encoded = alphabet[num % length] + encoded;
-    num = Math.floor(num / length);
-  } while (num > 0);
+    // If someone sends a message, broadcast it to other people
+    socket.on('send', message =>{
+        socket.broadcast.emit('receive', {message: message, name: users[socket.id]})
+    });
 
-  return encoded;
-}
+    // If someone leaves the chat, let others know 
+    socket.on('disconnect', message =>{
+        socket.broadcast.emit('left', users[socket.id]);
+        delete users[socket.id];
+    });
 
-/**
- * Return the integer value specified by the given string.
- *
- * @param {String} str The string to convert.
- * @returns {Number} The integer value represented by the string.
- * @api public
- */
-function decode(str) {
-  var decoded = 0;
 
-  for (i = 0; i < str.length; i++) {
-    decoded = decoded * length + map[str.charAt(i)];
-  }
-
-  return decoded;
-}
-
-/**
- * Yeast: A tiny growing id generator.
- *
- * @returns {String} A unique id.
- * @api public
- */
-function yeast() {
-  var now = encode(+new Date());
-
-  if (now !== prev) return seed = 0, prev = now;
-  return now +'.'+ encode(seed++);
-}
-
-//
-// Map each character to its index.
-//
-for (; i < length; i++) map[alphabet[i]] = i;
-
-//
-// Expose the `yeast`, `encode` and `decode` functions.
-//
-yeast.encode = encode;
-yeast.decode = decode;
-module.exports = yeast;
+})
