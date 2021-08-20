@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: url('wallpaper1.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+.container{
+    /* border: 12px solid black; */
+    color: white;
+    position: absolute;
+    top: 20%;
+    left: 40%;
+}
+.container h1{
+    font-size: 50px;
+    border-bottom: 5px solid purple;
+    margin-bottom: 43px;
+    padding: 13px 0;
+    /* align-items: center; */
+}
+.box{
+    width: 100%;
+    /* border: 2px solid  rgb(250, 189, 250); */
+    /* border-bottom: 3px solid purple; */
+    margin: 32px 0;
+}
+.box input{
+    width: 75%;
+    
+    padding: 5px 10px;
+    border: 3px solid wheat;
+    border-radius: 10px;
+    outline: none;
+    font-size: 20px;
+    background: none;
+
+    color: white;
+}
+.box i{
+    padding: 0px 12px;
+    width: 50px;
+    /* float: left; */
+    text-align: center;
+}
+.btn{
+    cursor: pointer;
+    outline: none;
+    width: 25%;
+    margin: 12px 12px;
+    padding: 6px;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    /* border: 2px solid purple; */
+    border: 3px solid white;
+    color: blanchedalmond;
+    background-color: black;
+    text-decoration: none;
+}
+.btn a{
+    text-decoration: none;
+    color: blanchedalmond;
+}
+.btn:hover{
+    color: black;
+    background-color: white;
+    border: 4px solid wheat;
+    text-decoration: none;
+}
+.btn a:hover{
+    color: black;
+}
+.box input:hover{
+    color: black;
+    background-color: white;
+}
